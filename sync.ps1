@@ -1,10 +1,8 @@
 [CmdletBinding()]
 param (
-    [Parameter(Position = 0)]
-    [string]$Message,
-
-    [switch]$Auto
+    [Parameter(Position = 0, ValueFromRemainingArguments = $true)]
+    [string[]]$Arguments
 )
 
-$scriptPath = Join-Path $PSScriptRoot "scripts\git-sync.ps1"
-& $scriptPath @PSBoundParameters
+$script = Join-Path $PSScriptRoot "scripts\sync.js"
+& node $script $Arguments

@@ -1,0 +1,46 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Secrets & Credentials
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+token.json
+
+# AI provider configs with credentials
+.anthropic/
+.openai/
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor
+.idea/
+.vscode/*
+!.vscode/settings.json.example
+*.swp
+*.swo
+
+# Node / Dependencies (if any utilities added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python / Virtual Envs
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+
+# Scratch & Temporary files
+scratch/
+tmp/
+temp/
